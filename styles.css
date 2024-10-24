@@ -1,0 +1,92 @@
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+header {
+    background-color: #4CAF50; /* 主色调 */
+    color: white;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+h1, h3 {
+    margin: 0;
+    font-family: 'Georgia', serif; /* 更优雅的字体 */
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    margin: 10px;
+    font-weight: bold;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.basket {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+}
+
+.recipe {
+    display: flex;
+    justify-content: space-between; /* 将子元素推到两端 */
+    align-items: center;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px 0;
+    padding: 10px;
+    width: 80%; /* 控制宽度 */
+}
+
+.recipe img {
+    width: 100px; /* 设定图片宽度 */
+    height: auto;
+    border-radius: 5px;
+    margin-right: 20px;
+}
+
+button {
+    background-color: #4CAF50; /* 主色调 */
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s, transform 0.2s; /* 添加过渡效果 */
+}
+
+button:hover {
+    background-color: #45a049; /* 悬停效果 */
+    transform: scale(1.05); /* 放大效果 */
+}
+
+#clear-basket, #place-order {
+    margin-top: 20px;
+}
+
+#total-count {
+    font-weight: bold;
+}
+
+/* 响应式设计 */
+@media (max-width: 600px) {
+    .recipe {
+        flex-direction: column; /* 小屏幕上纵向排列 */
+    }
+
+    .recipe img {
+        margin-bottom: 10px;
+    }
+}
